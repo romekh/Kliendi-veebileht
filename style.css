@@ -1,12 +1,12 @@
 body {
-    background-image: url("background.png");
+    background-image: url("pildid/background.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 
 .firstimg {
-    margin-left: 40%;
+    margin-left: 37.5%;
 }
 
 .middleimg {
@@ -16,6 +16,10 @@ body {
 
 .lastimg {
     margin-right: 10em;
+}
+
+.lastimg:hover {
+    opacity: 75%;
 }
 
 h1 {
@@ -45,11 +49,11 @@ p {
     font-size: 3em;
     font-family: 'Franklin Gothic Medium';
     font-weight: lighter;
-    color: rgb(75, 75, 75);
+    color: black;
 }
 
 .aClass:hover {
-    color: black;
+    color: rgb(70, 70, 70);
 }
 
 .grid-container {
