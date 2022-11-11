@@ -1,0 +1,87 @@
+body {
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.firstimg {
+    margin-left: 40%;
+}
+
+.middleimg {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.lastimg {
+    margin-right: 10em;
+}
+
+h1 {
+    margin: .5em;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 8em;
+    font-weight: lighter;
+}
+
+h2 {
+    margin: .5em;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 5em;
+    font-weight: lighter;  
+    height: 100%; 
+}
+
+p {
+    margin: auto;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 4em;
+    font-weight: lighter;   
+}
+
+.aClass {
+    margin-left: 1.5em;
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: lighter;
+    color: rgb(75, 75, 75);
+}
+
+.aClass:hover {
+    color: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    margin-right: 4em;
+    margin-left: 4em;
+    margin-top: 3em;
+    height: 100%;
+    /*border: 5px solid black;*/
+}
+
+.box-galerii {
+    border: 2px solid black;
+    text-align: center;
+    line-height: 40em;
+    height: 100%;
+}
+
+.box-gmaps {
+    border: 2px solid black;
+    text-align: center;
+    height: 65%;
+}
+
+.box {
+    /*border: 2px solid black;*/
+    text-align: center;   
+}
+
+.info {
+    text-align: center;
+    height: 35%;
+}
