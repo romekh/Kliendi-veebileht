@@ -1,25 +1,20 @@
 body {
     background-image: url("pildid/background.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% auto;
 }
 
-
-.firstimg {
-    margin-left: 37.5%;
+table {
+    border-collapse: collapse;
 }
 
-.middleimg {
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-.lastimg {
-    margin-right: 10em;
-}
-
-.lastimg:hover {
-    opacity: 75%;
+th {
+    border: 2px solid black;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 5em;
+    text-align: left;
+    padding-left: .25em;
+    font-weight: lighter;
 }
 
 h1 {
@@ -39,9 +34,32 @@ h2 {
 
 p {
     margin: auto;
+    padding-top: .25em;
     font-family: 'Brush Script MT', cursive;
     font-size: 4em;
     font-weight: lighter;   
+}
+
+.firstimg {
+    margin-left: 37.5%;
+}
+
+.middleimg {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.lastimg {
+    margin-right: 10em;
+}
+
+.lastimg:hover {
+    opacity: 75%;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .aClass {
@@ -56,6 +74,13 @@ p {
     color: rgb(70, 70, 70);
 }
 
+.image-container {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -63,15 +88,41 @@ p {
     margin-right: 4em;
     margin-left: 4em;
     margin-top: 3em;
-    height: 100%;
-    /*border: 5px solid black;*/
+    overflow: auto;
 }
 
 .box-galerii {
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     text-align: center;
     line-height: 40em;
-    height: 100%;
+    height: 90%;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    animation: slide 5s infinite;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        margin-left: 0px;
+    }
+    33%{
+        margin-left: -1284px;
+    }
+    58%{
+        margin-left: -1284px;
+    }
+    66%{
+        margin-left: calc(-1284px - 720px - 500px);
+    }
+    100%{
+        margin-left: calc(-1284px - 720px - 500px);
+    }
 }
 
 .box-gmaps {
@@ -87,5 +138,5 @@ p {
 
 .info {
     text-align: center;
-    height: 35%;
+    height: 30%;
 }
