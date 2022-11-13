@@ -1,7 +1,13 @@
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
 body {
     background-image: url("pildid/background.png");
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 100% 100%;
+    height: 100%;
 }
 
 table {
@@ -18,9 +24,12 @@ th {
 }
 
 h1 {
-    margin: .5em;
+    margin-top: .5em;
+    margin-right: .5em;
+    margin-left: .5em;
+    margin-bottom: 0px;
     font-family: 'Brush Script MT', cursive;
-    font-size: 8em;
+    font-size: 6em;
     font-weight: lighter;
 }
 
@@ -40,21 +49,13 @@ p {
     font-weight: lighter;   
 }
 
-.firstimg {
-    margin-left: 37.5%;
+.icons {
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.middleimg {
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-.lastimg {
-    margin-right: 10em;
-}
-
-.lastimg:hover {
-    opacity: 75%;
+.tumbler:hover {
+    opacity: 80%;
 }
 
 .center {
@@ -63,8 +64,7 @@ p {
 }
 
 .aClass {
-    margin-left: 1.5em;
-    font-size: 3em;
+    font-size: 2.5em;
     font-family: 'Franklin Gothic Medium';
     font-weight: lighter;
     color: black;
@@ -76,26 +76,8 @@ p {
 
 .image-container {
     width: 100%;
-    top: 50%;
-    left: 50%;
+    margin-top: 1.25em;
     overflow: hidden;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
-    margin-right: 4em;
-    margin-left: 4em;
-    margin-top: 3em;
-    overflow: auto;
-}
-
-.box-galerii {
-    /*border: 2px solid black;*/
-    text-align: center;
-    line-height: 40em;
-    height: 90%;
 }
 
 .wrapper {
@@ -125,6 +107,23 @@ p {
     }
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    margin-right: 4em;
+    margin-left: 4em;
+    margin-top: 1.5em;
+    overflow: hidden;
+}
+
+.box-galerii {
+    /*border: 2px solid black;*/
+    margin-top: 2em;
+    text-align: center;
+    height: 90%;
+}
+
 .box-gmaps {
     border: 2px solid black;
     text-align: center;
@@ -132,11 +131,10 @@ p {
 }
 
 .box {
-    /*border: 2px solid black;*/
-    text-align: center;   
+    text-align: center;
 }
 
 .info {
     text-align: center;
-    height: 30%;
+    height: 25%;
 }
